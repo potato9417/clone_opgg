@@ -1,10 +1,12 @@
 import React from 'react';
+import { BrowserRouter, Route } from "react-router-dom";
+import Home from "./routes/Home"
 
 function App() {
   return (
-    <>
-      <h1>GG</h1>
-    </>
+    <BrowserRouter>
+      <Route path="/" exact={true} component={Home} />
+    </BrowserRouter>
   );
 }
 
